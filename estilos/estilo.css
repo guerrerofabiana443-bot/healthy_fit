@@ -1,0 +1,637 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/*---------------------------------
+aqui personalizo la barra 
+----------------------------------------------*/
+.pagina{
+    width: 100%;
+}
+nav{
+    background-color: #153667;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+nav img{
+    width: 65px;
+}
+.enlaces-menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.enlaces-menu a{
+    color: white;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+}
+.enlaces-menu a:hover{
+    color: darkgrey;
+}
+nav button{
+    margin-left: 80%;
+    background-color: rgb(110, 201, 19);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+nav button:hover{
+background-color: rgb(118, 252, 118);
+}
+iframe{
+    width: 100%;
+    height: 100vh;
+    border: none;
+} 
+
+
+/*-------------------------------------------
+AQUI PERSONALIZO INICIO
+--------------------------------------------*/
+.portada {
+    min-height: calc(110vh - 0px);
+    background-image: url("../imagenes/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+.logo_portada{
+    position: absolute;
+    width: 150px;
+    left: 90%;
+}
+.texto_portada{
+    color: white;
+    font-family: "Outfit", sans-serif ;
+    font-size: 30px;
+    padding: 20px;
+}
+h1{
+    font-family: "Outfit", sans-serif ;
+    color: white;
+    font-size: 60pt;
+    padding: 20px;
+    
+}
+h2{
+    color: greenyellow;
+    font-size: 80px;
+    font-family: "Outfit", sans-serif ;
+    padding: 20px;
+}
+.linea-verde1{
+    color: greenyellow;
+}
+.descripcion{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    padding: 20px;
+} 
+.boton-principal{
+background-color: yellowgreen;
+padding: 15px 35px;
+padding: 20px;
+border-radius: 30px;
+color: white;
+border: none;
+}
+.boton-principal:hover{
+    background-color: rgb(178, 255, 171);
+    cursor: pointer;
+}
+
+.productos-destacados{
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 60%;
+    border-radius: 30px;
+    padding: 20px;
+}
+.encabezado-producto{
+display: flex;
+justify-content: space-between;
+font-family: "Outfit", sans-serif;
+}
+.linea-verde2{
+    color: greenyellow;
+}
+.ver-todo{
+    color: black;
+    text-decoration: none;
+}
+.ver-todo:hover{
+    color: white;
+}
+h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.productos-tarjetas{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+.tarjeta{
+    background-color: #f6f0e5;
+    width: 180px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.tarjeta p{
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+.tarjeta strong{
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.tarjeta:hover{
+    background-color: rgb(97, 94, 94);
+}
+.tarjeta img{
+    width: 100%;
+}
+/*---------------------------------
+aqui personalizo footer 
+----------------------------------------------*/
+footer{
+    background-color: #153667;
+    color: #f6f0e5;
+    width: 100%;
+    min-height: 100px;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*---------------------------------
+aqui personalizo seccion de ropa 
+----------------------------------------------*/
+.mujer,
+.hombre{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+}
+.producto{
+    position: relative;
+    height: 300px;
+    background-color: #f5eee1;
+    margin: 40px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.producto:hover{
+    background-color: #8b8b8b;
+}
+.producto img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.producto p:nth-of-type(1){
+    color: #153667;
+     font-family: "Outfit", sans-serif;
+     font-weight: bolder;
+     font-size: 15px
+}
+.producto p:nth-of-type(2){
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    
+}
+.pr-ant{
+    color: #686868;
+    font-weight: lighter;
+    margin-left: 10px;
+     font-family: "Outfit", sans-serif;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.desc{
+    color: red;
+    font-size: medium;
+    margin-left: 10px;
+     font-family: "Outfit", sans-serif;
+    background-color: #ffd2f1;
+}
+.producto button img{
+    width: 30px;
+    height: 30px;
+}
+.producto button:hover{
+    background-color: #8b8b8b;
+    cursor: pointer;
+}
+.producto button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50px;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+.Sub-div{
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#color_prod1{
+    color: aquamarine;
+    font-size: 50px;
+}
+#color2_prod1{
+    color: rgb(80, 131, 189);
+    font-size: 50px;
+}
+#color3_prod1{
+    color: rgb(219, 150, 204);
+    font-size: 50px;
+}
+#color1_prod2{
+    color: rgb(90, 54, 21);
+    font-size: 50px;
+}
+#color2_prod2{
+    color: rgb(114, 114, 112);
+    font-size: 50px;
+}
+#color3_prod2{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+#color1_prod3{
+    color: rgb(29, 4, 168);
+    font-size: 50px;
+}
+#color2_prod3{
+    color: rgb(75, 82, 79);
+    font-size: 50px;
+}
+#color3_prod3{
+    color: rgb(3, 108, 150);
+    font-size: 50px;
+}
+#hcolor1_prod1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+#hcolor2_prod1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+#hcolor3_prod1{
+    color: rgb(96, 98, 133);
+    font-size: 50px;
+}
+#hcolor1_prod2{
+    color: rgb(75, 83, 79);
+    font-size: 50px;
+}
+#hcolor2_prod2{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+#hcolor3_prod2{
+    color: rgb(10, 6, 48);
+    font-size: 50px;
+}
+#hcolor1_prod3{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+#hcolor2_prod3{
+    color: rgb(46, 99, 30);
+    font-size: 50px;
+}
+#hcolor3_prod3{
+    color: rgb(31, 12, 204);
+    font-size: 50px;
+}
+/*---------------------------------
+aqui personalizo seccion de articulos 
+----------------------------------------------*/
+.articulos{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+}
+.producto{
+    position: relative;
+    height: 300px;
+    background-color: #f5eee1;
+    margin: 40px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.producto:hover{
+    background-color: #8b8b8b;
+}
+.producto img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+#Acolor1_prod1{
+    color: aquamarine;
+    font-size: 50px;
+}
+#Acolor2_prod1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+#Acolor3_prod1{
+    color: rgb(248, 0, 0);
+    font-size: 50px;
+}
+#Acolor1_prod2{
+    color: rgb(248, 0, 0);
+    font-size: 50px;
+}
+#Acolor2_prod2{
+    color: rgb(241, 165, 216);
+    font-size: 50px;
+}
+#Acolor3_prod2{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+#Acolor1_prod3{
+    color: rgb(156, 56, 223);
+    font-size: 50px;
+}
+#Acolor2_prod3{
+    color: rgb(223, 148, 198);
+    font-size: 50px;
+}
+#Acolor3_prod3{
+    color: rgb(70, 79, 212);
+    font-size: 50px;
+}
+#Acolor1_prod4{
+    color: rgb(24, 47, 173);
+    font-size: 50px;
+}
+#Acolor2_prod4{
+    color: rgb(235, 16, 16);
+    font-size: 50px;
+}
+#Acolor3_prod4{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+#Acolor1_prod5{
+    color: rgb(240, 153, 24);
+    font-size: 50px;
+}
+#Acolor2_prod5{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+#Acolor3_prod5{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+#Acolor1_prod6{
+    color: rgb(83, 225, 250);
+    font-size: 50px;
+}
+#Acolor2_prod6{
+    color: rgb(241, 165, 216);
+    font-size: 50px;
+}
+#Acolor3_prod6{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+.producto button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50px;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+/*---------------------------------
+aqui personalizo seccion de tips
+----------------------------------------------*/
+.cont_tips{
+    background-color: #fcfcf3;
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 40px;
+    margin-bottom: 500px;
+     font-family: "Outfit", sans-serif;
+
+}
+.cont_tips img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+.metodo div:nth-of-type(2) img{
+    max-width: 200px;
+ 
+}
+.cont_tips section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cont_tips section:nth-child(2) div:first-child img{
+    max-width: 200px;
+    margin-bottom: 50px; 
+}
+.cont_tips section:nth-child(1) div:last-child img{
+    max-width: 500px; 
+}
+.cont_tips section{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+/*---------------------------------
+aqui personalizo seccion de sedes
+----------------------------------------------*/
+.contenedor-sedes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.mapa img{
+    width: 120%;
+    height: auto;
+}
+.pucallpa,
+.sede-lima, 
+.sede-iquitos{
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    margin-right: 10%;
+    border-radius: 20px;
+}
+.sede-lima,
+.sede-iquitos{
+    display: flex;
+}
+.sede-lima img,
+.sede-iquitos img{
+    max-height: 280px;
+}
+.pucallpa img{
+    width: 100%;
+    object-fit: cover;
+}
+.pucallpa h2,
+.sede-lima h2,
+.sede-iquitos h2{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.lista-servicios{
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+.contenedor-sedes button{
+    background-color: rgb(99, 187, 10);
+    color: white;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25 case;
+
+}
+
+ .contenedor-sedes button:hover{
+background-color: rgb(12, 199, 12);
+transform: scale(1.05);
+}
+.contenedor-sedes p{
+    font-family: "Outfit", sans-serif;
+}
+.sede-lima .info-sede,
+.sede-iquitos .info-sede {
+    flex: 1;
+    padding: 30px;
+}
+
+/*---------------------------------
+aqui personalizo seccion de conctacto
+----------------------------------------------*/
+.form_cont{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 50px;
+    margin: 10px;
+}
+.formulario{
+    width: 100%;
+}
+.form_cont h1{
+    color: #153667;
+    margin: 10px;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.formulario label{
+    font-size: 30px;
+    font-family: "Outfit", sans-serif;
+}
+.formulario form input{
+    padding: 20px;
+}
+.formulario button{
+    background-color: rgb(110, 201, 19);
+    color: white;
+    padding: 5px 18px;
+    border-radius: 20px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color: 0.2 ease;
+    transform 0.2 ease;
+}
+.formulario button:hover{
+background-color: rgb(118, 252, 118);
+transform: scale(1.05);
+}
+.formulario form textarea{
+    padding: 50px;
+}
+.informacion{
+    display: grid;
+    grid-template-columns: 1fr,  1fr;
+    width: 90%;
+    gap: 20px;
+    
+}
+.corr-tel{
+    text-align: center;
+    border: 1px solid #153667;
+    border-radius: 30px;
+}
+.corr-tel img{
+    width: 80px;
+}
+.direccion{
+    grid: 2;
+    grid-row: 2;
+    text-align: center;
+}
+.ubi-cont{
+    border: 1px solid #153667;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+.ubi-cont img{
+    max-width: 200px;
+}
+.punto-ubi{
+    max-width: 50px;
+}
+.mapa-sedes{
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+}
